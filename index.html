@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/9fcb5d40d2.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <title>IZUKI ZEN</title>
+  <link rel="icon" type="image/png" href="/build/images/fav.png" />
+  <link rel="stylesheet" href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"/>
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+  <link rel="stylesheet" href="/build/main.css">
+  <link rel="stylesheet" href="/build/style.css">
+  <script src="/build/main.js"></script>
+  
+</head>
+<body>
+
+    <nav class="flex items-center justify-between flex-wrap p-6 fixed w-full z-10 top-0 navbg">
+		<div class="flex items-center flex-shrink-0 mr-6">
+			<a class="zoom" href="#">
+				<span class="text-2xl pl-2"><i class="em em-grinning"></i><font style="color: #fff;" class="evil neonText" size="6"><i class="fa-solid fa-biohazard" style="color:#fff;"></i> IZUKI ZEN</font></span>
+			</a>
+		</div>
+
+		<div class="block lg:hidden">
+			<button id="nav-toggle" style="background-color: transparent;"class="flex items-center px-3 py-2 border rounded text-white border-white hover:text-gray-500 hover:border-gray-600">
+				<svg class="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
+			</button>
+		</div>
+
+		<div class="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block pt-6 lg:pt-0" id="nav-content" align="right">
+			<ul class="list-reset lg:flex justify-end flex-1 items-center">
+				<li class="mr-3">
+					<a class="inline-block py-2 px-4 zoom" href="https://discord.gg/izukizen" target="_blank"><i class="fa-brands fa-discord" style="color:#fff;"></i> IzukiNFT</a>
+				</li>
+				<li class="mr-3">
+					<a class="inline-block py-2 px-4 zoom" href="https://twitter.com/invsblezuki" target="_blank"><i class="fa-brands fa-twitter" style="color:#fff;"></i> IzukiNFT</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="container shadow-lg mx-auto bg-white mt-24 md:mt-18">
+
+	</div>
+
+	<script>
+		document.getElementById('nav-toggle').onclick = function(){
+			document.getElementById("nav-content").classList.toggle("hidden");
+		}
+	</script>
+
+  <table id="home" border="0" style="border-radius: 20px 20px 0 0;" cellpadding="0" cellspacing="0" width="100%" align="center" data-aos="fade-down" data-aos-duration="800"> 
+      <tr>
+          <td>
+              <table border="0" width="85%" cellpadding="15" cellspacing="0" align="center">
+                  <tr>
+                      <td height="180" align="center" valign="middle" colspan="2">
+                        <img src="build/images/logo.png">
+                      </td>
+                  </tr>
+                  <tr>
+                      <td width="40%" class="onmobi">
+                          <img style="border-radius: 50%" class="zoom" src="build/images/fav.png" alt="zuki"  width="90%">
+                      </td>
+                      <td width="60%">
+                          <font class="perpet" color="#ffffff" size="5">
+                            <b>WELCOME TO IZUKI ZEN</b>
+                          </font><br />
+                          <font class="perpet" color="#ffffff" size="4">
+                            Discover 10.000 collections of Invisible Zuki NFT artwork.
+                          </font><br />
+                          <br />
+                          <button class="primary perpet" onclick=window.location.href="#minting-dapp">Mint NOW!</button>
+                          <a style="margin: 10px;">or buy on</a>
+                          <button class="navbg primary perpet" onclick=" window.open('http://opensea.io/','_blank')">Opensea</button>
+                      </td>
+                  </tr>
+                  <tr>
+                      <td>
+                          &nbsp;
+                      </td>
+                  </tr>
+              </table>
+          </td>
+      </tr>
+  </table>
+
+  <table id="mint" border="0" width="100%" cellpadding="5" cellspacing="0" class="navbg primary " align="center">
+      <tr>
+          <td>
+            <main>
+                <div data-aos="fade-down" data-aos-duration="1000" id="minting-dapp""></div>
+              </main>
+          </td>
+          <tr>
+          <td align="center" valign="bottom">
+            <a href="#">
+              <font class="perpet" color="#ffffff" size="5"> BACK TO TOP </font>
+            </a>
+          </td>
+          <tr>
+            <td>
+              <font class="perpet" color="#ffffff"><h5>&nbsp;&nbsp;© 2022 IZUKI NFT</h5></font>
+            </td>
+        </tr>
+        </tr>
+      </tr>
+  </table>
+
+  <div class="gap">
+</div>
+
+
+  <script>
+    AOS.init();
+  </script>
+
+</body>
+</html>
